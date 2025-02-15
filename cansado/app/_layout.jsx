@@ -6,7 +6,7 @@ import '../global.css'
 
 const _layout = () => {
     return (
-        <Stack screenOptions={{headerShown: false}}>
+        <Stack screenOptions={{headerShown: false,}}>
             <Stack.Screen name='index'/>
             <Stack.Screen name='calculate'/>
             <Stack.Screen name='table'/>

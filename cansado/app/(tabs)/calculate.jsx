@@ -38,9 +38,9 @@ const calculate = () => {
     }, [numbers])
 
     return (
-        <SafeAreaView className='w-full h-full'>
+        <SafeAreaView className='w-full h-full bg-slate-400'>
             <ScrollView contentContainerStyle={{height: '100%'}}>
-                <View className='flex-1 justify-center items-center space-y-4 mx-8'>
+                <View className='flex-1 justify-center items-center space-y-4 m-4 bg-white rounded-xl p-4'>
                     <Text className='text-blue-800 font-black text-4xl' > Calculadora </Text>
                     {
                         ['num1', 'num2', 'num3'].map((key, index) => (
@@ -48,8 +48,7 @@ const calculate = () => {
                                 key={index}
                                 placeholder={`Introduce el ${index + 1} numero`}
                                 onChangeText={(value) => setNumbers( (prev) => ({...prev, [key]: value}) )}
-                                className='w-full border-2 border-gray-700 h-14 text-base font-medium text-center rounded-xl'
-                                keyboardType='numeric'
+                                className={`mx-4 w-full border-2 h-14 text-base font-medium text-center rounded-xl`}                               keyboardType='numeric'
                             />
                         ))
                     }

@@ -13,7 +13,6 @@ const _layout = () => {
                 tabBarInactiveTintColor: '#60a5fa',
                 tabBarStyle: {
                     height: 80,
-                    borderTopWidth: 1
                 }
             }}
         >
@@ -21,7 +20,7 @@ const _layout = () => {
                 name='calculate'
                 options={{
                     headerShown: false,
-                    animation: 'fade',
+                    animation: 'shift',
                     tabBarIcon: ({color, focused}) => (
                         <View className='items-center' >
                             <MaterialIcons name='calculate' size={36} color={color} />
@@ -34,7 +33,7 @@ const _layout = () => {
                 name='table'
                 options={{
                     headerShown: false,
-                    animation: 'fade',
+                    animation: 'shift',
                     tabBarIcon: ({color, focused}) => (
                         <View className='items-center' >
                             <MaterialIcons name='table-view' size={36} color={color} />
